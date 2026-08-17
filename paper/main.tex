@@ -225,16 +225,45 @@ In cryptographic literature, security proofs are structured as ``Games'' played 
 
 \subsection{Ciphertext Indistinguishability (IND-CKA)}
 
+To formally prove that the proposed Scheme X guarantees data privacy, we define the IND-CKA (Indistinguishability under Chosen Keyword Attack) security game between a Challenger $\mathcal{C}$ and an Adversary $\mathcal{A}$. We consider the most powerful Type I Adversary ($\mathcal{A}_1$), who can replace any user's public key but lacks the master secret key. 
+
+\begin{definition}
+Let $\mathcal{A}_1$ be a probabilistic polynomial-time (PPT) Type I adversary. We define the advantage of $\mathcal{A}_1$ in breaking the IND-CKA security of Scheme X as:
+\begin{equation}
+    Adv_{\mathcal{A}_1}^{\text{IND-CKA}}(k) = \left| \Pr[b' = b] - \frac{1}{2} \right|
+\end{equation}
+Scheme X is IND-CKA secure if for all PPT adversaries $\mathcal{A}_1$, $Adv_{\mathcal{A}_1}^{\text{IND-CKA}}(k)$ is negligible in the security parameter $k$.
+\end{definition}
+
 \begin{theorem}
-The proposed Scheme X is IND-CKA secure against both Type I and Type II adversaries in the random oracle model, under the assumption that the CDH problem remains hard in $\mathbb{G}$.
+If there exists a Type I adversary $\mathcal{A}_1$ that can win the IND-CKA game against Scheme X with a non-negligible advantage $\epsilon$ after making $q_{H_4}$ queries to the random oracle $H_4$, then we can construct a Challenger $\mathcal{C}$ that solves the CDH problem with probability $\epsilon' \ge \frac{2\epsilon}{q_{H_4}}$.
 \end{theorem}
 
 \begin{proof}
-We approach the proof via contradiction. Assume there exists a Type I adversary $\mathcal{A}_1$ capable of winning the IND-CKA game with a non-negligible advantage $\epsilon$. We construct a Challenger $\mathcal{C}$ that leverages $\mathcal{A}_1$ as a subroutine to solve the CDH problem. 
+The proof proceeds via a sequence of games. $\mathcal{C}$ is given a random CDH challenge instance $(P, aP, bP) \in \mathbb{G}^3$ and aims to compute $abP$ by interacting with $\mathcal{A}_1$.
 
-The Challenger $\mathcal{C}$ is provided with a CDH instance $(P, aP, bP)$ and tasked with outputting $abP$. $\mathcal{C}$ ingeniously sets the target Data User's public key as $PK_{DU,1} = aP$ and the encryption randomness as $R = bP$. During the challenge phase, $\mathcal{A}_1$ is presented with two keywords, $W_0$ and $W_1$, and must determine which was encrypted. 
+\textbf{Setup Phase:} $\mathcal{C}$ initializes the system parameters. $\mathcal{C}$ sets the master public key $P_{pub} = sP$ using a known random scalar $s \in \mathbb{Z}_q^*$. $\mathcal{C}$ targets a specific Data User $U^*$ for the challenge and sets their partial public key to $P_{U^*,1} = aP$. Note that $\mathcal{C}$ does not know the corresponding secret value $a$. All parameters are sent to $\mathcal{A}_1$.
 
-To successfully distinguish the keywords, $\mathcal{A}_1$ is mathematically forced to query the random oracle $H_4$ on the shared secret $K_{DO-DU}$. However, observe that $K_{DO-DU} = r \cdot PK_{DU,1} = b(aP) = abP$. Therefore, if $\mathcal{A}_1$ successfully wins the game, it implies that $\mathcal{A}_1$ has queried $abP$ to the oracle. $\mathcal{C}$ can simply extract $abP$ from $\mathcal{A}_1$'s query list, successfully solving the CDH problem. Because the CDH assumption dictates that computing $abP$ is hard, the existence of such an adversary $\mathcal{A}_1$ is a contradiction. The proof for the Type II adversary follows an analogous reduction.
+\textbf{Phase 1 (Queries):} $\mathcal{A}_1$ is permitted to issue polynomial queries to the following oracles maintained by $\mathcal{C}$:
+\begin{itemize}
+    \item \textit{$H$-Oracles:} $\mathcal{C}$ maintains lists $L_{H_1}, L_{H_2}, L_{H_3}, L_{H_4}$ to consistently simulate random oracle responses. If a query is new, $\mathcal{C}$ returns a random value and stores the mapping.
+    \item \textit{Extract-Partial-Key:} $\mathcal{C}$ returns $d_i = s \cdot H_1(ID_i)$.
+    \item \textit{Replace-Public-Key:} $\mathcal{A}_1$ can replace the public key $PK_{ID}$ of any user except the target $U^*$. $\mathcal{C}$ updates the registry.
+    \item \textit{Trapdoor-Query:} $\mathcal{A}_1$ requests the trapdoor for a keyword $W$ for user $U_i$. If $U_i \neq U^*$, $\mathcal{C}$ computes and returns it normally.
+\end{itemize}
+
+\textbf{Challenge Phase:} $\mathcal{A}_1$ outputs two target keywords $W_0, W_1$ of equal length on which it wishes to be challenged. $\mathcal{C}$ must generate a challenge index $I^*$ for $W_b$ where $b \in \{0,1\}$ is a random bit. 
+$\mathcal{C}$ implicitly sets the encryption randomness $r = b$. Thus, $\mathcal{C}$ sets $R^* = bP$. 
+$\mathcal{C}$ generates a random string $C^* \in \{0,1\}^{|q|}$ and outputs the challenge index $I^* = (R^*, C^*)$ to $\mathcal{A}_1$.
+Notice that a valid core token would require $\mathcal{C}$ to compute $K_{DO-DU} = r \cdot P_{U^*,1} = b(aP) = abP$. Because $\mathcal{C}$ cannot compute $abP$, it sets $C^*$ uniformly at random. This perfectly simulates the ciphertext distribution from the perspective of $\mathcal{A}_1$ unless $\mathcal{A}_1$ queries the oracle on $abP$.
+
+\textbf{Phase 2 (Queries):} $\mathcal{A}_1$ continues to query the oracles identically to Phase 1, with the restriction that it cannot query the trapdoor for $W_0$ or $W_1$ against $U^*$.
+
+\textbf{Guess Phase:} Eventually, $\mathcal{A}_1$ outputs a guess bit $b'$. 
+If $\mathcal{A}_1$ successfully distinguishes whether $C^*$ corresponds to $W_0$ or $W_1$ with advantage $\epsilon$, it must have realized that $C^*$ is a random string. $\mathcal{A}_1$ can only realize this if it successfully evaluated the $H_4$ oracle on the critical input $K_{DO-DU} = abP$. 
+
+Therefore, at the conclusion of the game, $\mathcal{C}$ randomly selects one tuple from the $L_{H_4}$ query list and outputs the group element component as its answer to the CDH problem. If $\mathcal{A}_1$ made $q_{H_4}$ queries to $H_4$ and succeeded, the probability that $\mathcal{C}$ correctly extracts the CDH solution $abP$ is $\frac{1}{q_{H_4}}$.
+Since $\mathcal{A}_1$'s advantage is $\epsilon$, the overall probability of $\mathcal{C}$ solving the CDH problem is bounded by $\epsilon' \ge \frac{2\epsilon}{q_{H_4}}$. Because the CDH problem is assumed to be hard in polynomial time, $\epsilon'$ must be negligible, implying $\epsilon$ must also be negligible. The proof for the Type II adversary ($\mathcal{A}_2$) acting as a malicious KGC follows an identical structural reduction, targeting the master secret parameter.
 \end{proof}
 
 \subsection{Resistance to Keyword-Guessing Attacks (KGA)}
