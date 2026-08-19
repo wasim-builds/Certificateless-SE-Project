@@ -1,0 +1,12 @@
+# Rust
+src/cl_se_rust/target/
+**/*.rs.bk
+
+# LaTeX
+paper/*.aux
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*-eps-converted-to.pdf

@@ -21,10 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{lu2023certificateless}
-J.~Lu, H.~Li, J.~Huang, S.~Ma, M.~H.~A. Au, and Q.~Huang, ``Certificateless
-  public key authenticated encryption with keyword search achieving stronger
-  security,'' \emph{Information}, vol.~14, no.~3, p. 142, 2023.
+\bibitem{liu2023pairing}
+X.~Liu, H.~Dong, N.~Kumari, and J.~Kar, ``A pairing-free certificateless
+  searchable public key encryption scheme for industrial internet of things,''
+  \emph{IEEE Access}, vol.~11, pp. 58\,754--58\,764, 2023.
 
 \bibitem{elhabob2020efficient}
 R.~Elhabob, Y.~Zhao, I.~Sella, and H.~Xiong, ``An efficient certificateless
@@ -32,9 +32,9 @@ R.~Elhabob, Y.~Zhao, I.~Sella, and H.~Xiong, ``An efficient certificateless
   \emph{Journal of Ambient Intelligence and Humanized Computing}, vol.~11, pp.
   1065--1083, 2020.
 
-\bibitem{liu2023pairing}
-X.~Liu, H.~Dong, N.~Kumari, and J.~Kar, ``A pairing-free certificateless
-  searchable public key encryption scheme for industrial internet of things,''
-  \emph{IEEE Access}, vol.~11, pp. 58\,754--58\,764, 2023.
+\bibitem{lu2023certificateless}
+J.~Lu, H.~Li, J.~Huang, S.~Ma, M.~H.~A. Au, and Q.~Huang, ``Certificateless
+  public key authenticated encryption with keyword search achieving stronger
+  security,'' \emph{Information}, vol.~14, no.~3, p. 142, 2023.
 
 \end{thebibliography}

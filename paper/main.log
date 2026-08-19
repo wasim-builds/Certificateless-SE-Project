@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.8.14)  18 AUG 2026 00:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2026.8.19)  19 AUG 2026 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,107 +700,168 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 38.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 51.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 53.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 54.
+
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-Underfull \hbox (badness 2698) in paragraph at lines 63--64
+Underfull \hbox (badness 1701) in paragraph at lines 61--62
+\OT1/ppl/m/n/9.53561 Guessing At-tacks (OKGA). IKGA refers to an at-tack
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 72--73
 \OT1/ppl/m/n/9.53561 a novel CL-SE ar-chi-tec-ture that uti-lizes only
  []
 
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 88.
 
+Underfull \hbox (badness 1603) in paragraph at lines 72--73
+\OT1/ppl/m/n/9.53561 i-nat-ing bi-lin-ear pair-ings, our scheme by-passes
+ []
+
+[2] [3]
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-14.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+89.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2538) in paragraph at lines 114--115
+Underfull \hbox (badness 2538) in paragraph at lines 189--190
 \OT1/ppl/m/n/9.53561 The pro-posed pairing-free CL-SE scheme con-sists of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 []\OT1/ppl/m/n/9.53561 Pub-lish pub-lic pa-ram-e-ters $\OML/cmm/m/it/10 params 
 \OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 4303) in paragraph at lines 129--130
+Underfull \hbox (badness 4303) in paragraph at lines 204--205
 \OMS/cmsy/m/n/10 f\U/msb/m/n/9.53561 G\OML/cmm/m/it/10 ; q; P; P[]; H[]; H[]; H
 []; H[]\OMS/cmsy/m/n/10 g$ \OT1/ppl/m/n/9.53561 and keep $\OML/cmm/m/it/10 s$ \
 OT1/ppl/m/n/9.53561 strictly
  []
 
-[2]
-Underfull \hbox (badness 6592) in paragraph at lines 161--162
+[4]
+Underfull \hbox (badness 6592) in paragraph at lines 238--239
 []\OT1/ppl/m/n/9.53561 Com-pute shared se-cret bridg-ing DO and DU:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 []\OT1/ppl/m/n/9.53561 Com-pute dig-i-tal sig-na-ture $\OML/cmm/m/it/10 ^^[[] \
 OT1/cmr/m/n/10 =
  []
 
-[3]
-Overfull \hbox (79.19868pt too wide) in paragraph at lines 297--307
-[][] 
+
+Underfull \vbox (badness 1297) has occurred while \output is active []
+
+ [5]
+[6] [7]
+Package epstopdf Info: Source file: <enc_time.eps>
+(epstopdf)                    date: 2026-08-19 23:00:03
+(epstopdf)                    size: 42839 bytes
+(epstopdf)             Output file: <enc_time-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-08-19 23:00:04
+(epstopdf)                    size: 26144 bytes
+(epstopdf)             Command: <repstopdf --outfile=enc_time-eps-converted-to.
+pdf enc_time.eps>
+(epstopdf)             \includegraphics on input line 446.
+Package epstopdf Info: Output file is already uptodate.
+<enc_time-eps-converted-to.pdf, id=49, 578.16pt x 361.35pt>
+File: enc_time-eps-converted-to.pdf Graphic file (type pdf)
+<use enc_time-eps-converted-to.pdf>
+Package pdftex.def Info: enc_time-eps-converted-to.pdf  used on input line 446.
+
+(pdftex.def)             Requested size: 252.94499pt x 158.09024pt.
+Package epstopdf Info: Source file: <search_time.eps>
+(epstopdf)                    date: 2026-08-19 23:00:03
+(epstopdf)                    size: 41562 bytes
+(epstopdf)             Output file: <search_time-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-08-19 23:00:04
+(epstopdf)                    size: 25465 bytes
+(epstopdf)             Command: <repstopdf --outfile=search_time-eps-converted-
+to.pdf search_time.eps>
+(epstopdf)             \includegraphics on input line 458.
+Package epstopdf Info: Output file is already uptodate.
+<search_time-eps-converted-to.pdf, id=50, 578.16pt x 361.35pt>
+File: search_time-eps-converted-to.pdf Graphic file (type pdf)
+<use search_time-eps-converted-to.pdf>
+Package pdftex.def Info: search_time-eps-converted-to.pdf  used on input line 4
+58.
+(pdftex.def)             Requested size: 252.94499pt x 158.09024pt.
+ [8 <./enc_time-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <comm_cost.eps>
+(epstopdf)                    date: 2026-08-19 23:00:04
+(epstopdf)                    size: 36978 bytes
+(epstopdf)             Output file: <comm_cost-eps-converted-to.pdf>
+(epstopdf)                    date: 2026-08-19 23:00:05
+(epstopdf)                    size: 24542 bytes
+(epstopdf)             Command: <repstopdf --outfile=comm_cost-eps-converted-to
+.pdf comm_cost.eps>
+(epstopdf)             \includegraphics on input line 470.
+Package epstopdf Info: Output file is already uptodate.
+<comm_cost-eps-converted-to.pdf, id=125, 505.89pt x 361.35pt>
+File: comm_cost-eps-converted-to.pdf Graphic file (type pdf)
+<use comm_cost-eps-converted-to.pdf>
+Package pdftex.def Info: comm_cost-eps-converted-to.pdf  used on input line 470
+.
+(pdftex.def)             Requested size: 252.94499pt x 180.67456pt.
+
+Underfull \hbox (badness 1845) in paragraph at lines 482--483
+\OT1/ppl/m/n/9.53561 re-sis-tance. How-ever, their re-liance on pairing-friendl
+y
  []
 
-Package epstopdf Info: Source file: <performance_comparison.eps>
-(epstopdf)                    date: 2026-08-16 22:38:49
-(epstopdf)                    size: 37084 bytes
-(epstopdf)             Output file: <performance_comparison-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2026-08-16 22:41:44
-(epstopdf)                    size: 23535 bytes
-(epstopdf)             Command: <repstopdf --outfile=performance_comparison-eps
--converted-to.pdf performance_comparison.eps>
-(epstopdf)             \includegraphics on input line 316.
-Package epstopdf Info: Output file is already uptodate.
-<performance_comparison-eps-converted-to.pdf, id=34, 578.16pt x 361.35pt>
-File: performance_comparison-eps-converted-to.pdf Graphic file (type pdf)
-<use performance_comparison-eps-converted-to.pdf>
-Package pdftex.def Info: performance_comparison-eps-converted-to.pdf  used on i
-nput line 316.
-(pdftex.def)             Requested size: 252.94499pt x 158.09024pt.
-[4] (./main.bbl) [5 <./performance_comparison-eps-converted-to.pdf>]
-(./main.aux) ) 
+[9 <./search_time-eps-converted-to.pdf> <./comm_cost-eps-converted-to.pdf>]
+Underfull \hbox (badness 2326) in paragraph at lines 518--519
+[]\OT1/ppl/m/n/9.53561 By dual-blinding the search trap-doors to the
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 522--523
+[]\OT1/ppl/m/n/9.53561 Extensive ex-per-i-men-tal sim-u-la-tions and the-o-ret-
+i-cal
+ []
+
+(./main.bbl) [10] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 16382 strings out of 477950
- 332885 string characters out of 5838504
- 1881388 words of memory out of 6000000
- 36267 multiletter control sequences out of 15000+600000
- 564207 words of font info for 152 fonts, out of 8000000 for 9000
+ 16405 strings out of 477950
+ 333367 string characters out of 5838504
+ 1880388 words of memory out of 6000000
+ 36287 multiletter control sequences out of 15000+600000
+ 565681 words of font info for 155 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  84i,9n,80p,1602b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
-ino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (5 pages, 292692 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/p
+alatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (10 pages, 399820 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 375 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
